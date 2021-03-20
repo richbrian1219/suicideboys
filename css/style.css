@@ -1,0 +1,306 @@
+* {
+	margin: 0;
+	padding: 0;
+}
+body {
+   margin: 0;
+   padding: 0;
+	background-color: rgba(40,40,40,1.00);
+/*
+	background-image: url(../img/bgi.jpg);
+	background-repeat: no-repeat;
+	background-size: 100%;
+	background-attachment: fixed;
+*/
+}
+
+.container {
+    width: 100%;
+    overflow: hidden;
+    background: url(../img/background.jpg);
+    background-attachment: fixed;
+	  background-size: 100% 100%;
+}
+.container img {
+	width: 100%;
+}
+.fuck {
+	height: 500px;
+	background-color: rgba(5, 0, 24);
+}
+
+.w {
+	width: 1100px;
+}
+li {
+	list-style: none;
+}
+/*navigaton part*/
+.nav {
+	position: relative;
+	width: 100%;
+	height: 50px;
+	background-color: black;
+	box-shadow: 0 0 12px 5px black;
+	z-index: 1;
+}
+.one {
+	position: absolute;
+	z-index: 100;
+	top: -50px;
+	display: none;
+}
+.nav .nav_text {
+	text-decoration: none;
+	display: block;
+	height: 100%;
+	float: left;
+	font-size: 36px;
+	line-height: 50px;
+	letter-spacing: 15px;
+	margin-left: 20px;
+	color: #AAAAAA;
+	font-weight: 700;
+	cursor: pointer;
+}
+.nav span {
+	color: rgba(255,255,255,0.7);
+	display: block;
+	float: left;
+	height: 50px;
+	line-height: 70px;
+	cursor: default;
+}
+.nav_text:hover {
+	text-shadow: 0 0 5px white,
+		0 0 8px white,
+		0 0 15px white,
+		0 0 20px white;
+	color: white;
+}
+.nav_text:focus {
+	outline: none;
+}
+.nav ul {
+	position: relative;
+	height: 100%;
+	width: 600px;
+	color: white;
+	margin-right: 30px;
+	float: right;
+}
+.nav li {
+	position: relative;
+	float: left;
+	width: 100px;
+	height: 100%;
+	text-align: center;
+	line-height: 50px;
+	border-radius: 10px;
+	font-size: 20px;
+	font-weight: 600;
+	cursor: pointer;
+}
+.nav_mask {
+	background-color: rgba(240,240,200,0.30);
+	position: absolute;
+	left: 0;
+	top: 0;
+	height: 50px;
+	width: 100px;
+	border-radius: 10px;
+	transition: .4s;
+	pointer-events: none;
+}
+.myContact {
+	display: none;
+	position: absolute;
+	left: -50px;
+	top: 50px;
+	height: 200px;
+	width: 200px;
+	z-index: 10;
+}
+
+
+
+/*banner part*/
+.banner {
+	position: relative;
+	height: 380px;
+/*	background-color: rgba(22, 67, 1,0.2);*/
+	background-color: rgba(36, 45, 32,0.8);
+	margin: 0 auto;
+	box-shadow: 0 0 14px black;
+	border-radius: 15px;
+}
+.banner_img{
+	width: 300px;
+	height: 100%;
+	border-right: 2px solid grey;
+}
+.round1,.round2,.round3 {
+	width: 200px;
+	height: 200px;
+	border: 2px solid white;
+	position: absolute;
+	top: 90px;
+	left: 50px;
+	border-radius: 35% 46% 34% 49%/48% 28% 43% 24%;
+	transition: 1s;
+}
+.words {
+	position: absolute;
+	top: 90px;
+	left: 50px;
+	line-height: 200px;
+	font-size: 32px;
+	font-weight: 600;
+	color: rgba(255,255,255,.80);
+	text-align: center;
+	width: 200px;
+	height: 200px;
+	cursor: default;
+}
+.banner_img:hover .round1,.banner_img:hover .round2 {
+	background-color: rgba(255,255,255,0.5);
+}
+.round1 {
+	animation: spin1 5s linear infinite;	
+}
+.round2 {
+	animation: spin2 6s linear infinite;
+}
+.round3 {
+	animation: spin3 4s linear infinite;
+}
+@keyframes spin1 {
+	0% {
+		transform: rotate(30deg);
+	}
+	50% {
+		transform: rotate(210deg) scale(1.07);
+	}
+	100% {
+		transform: rotate(390deg) scale(1);
+	}
+}
+@keyframes spin2 {
+	0% {}
+	100% {
+		transform: rotate(360deg);
+	}
+}
+@keyframes spin3 {
+	0% {
+		transform: rotate(-20deg);
+	}
+	100% {
+		transform: rotate(-380deg);
+	}
+}
+.banner_text {
+	position: absolute;
+	top: 0;
+	right: 0;
+	width: 710px;
+	height: auto;
+	padding: 80px 40px 40px 0;
+	font-size: 25px;
+	color: azure;
+}
+.slideBar {
+	position: absolute;
+	left: 1100px;
+	top: 100px;
+	width: 80px;
+	height: auto; 
+}
+.slideBar li {
+	width: 100%;
+	height: 40px;
+	border: 2px solid orange;
+	color: white;
+	font-size: 24px;
+	text-align: center;
+	line-height: 40px;
+	border-radius: 8px;
+}
+.current {
+	background-color: orange;
+}
+
+/*introduction part*/
+.intro {
+	margin: 100px auto;
+	height: 1030px;
+	background-color: rgba(60, 68, 87, 0.3);
+	box-shadow: 0 0 14px black;
+	border-radius: 15px;
+	overflow: hidden;
+}
+.intro_box {
+	width: 1100px;
+	height: 300px;
+	overflow: hidden;
+	display: flex;
+	justify-content: center;
+	margin-bottom: 80px;
+}
+.intro_img {
+	overflow: hidden;
+	transition: .7s; 
+	position: relative;
+}
+.intro_box img {
+	width: 400px;
+	height: 300px;
+}
+.intro_box p {
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	width: 400px;
+	height: 40px;
+	line-height: 40px;
+	color: white;
+	font-size: 18px;
+	text-align: center;
+	background-color: rgba(0,0,0,0.4);
+	display: none;
+}
+.intro_img:hover {
+	flex-shrink: 0;
+	flex-grow: 0;
+}
+.intro_img:hover p {
+	display: block;
+}
+.intro>p {
+	text-indent: 2em;
+	font-size: 20px;
+	line-height: 25px;;
+	color: rgba(255,255,255,0.7);
+	margin: 20px 50px;
+}
+
+/*transport part*/
+.transport {
+	height: 500px;
+	margin: 0 auto;
+	box-shadow: 0 0 14px black;
+	background-color: rgba(87,51,0,0.50);
+}
+
+
+/*萌新UP的日常卑微→求点赞*/
+/*萌新UP的日常卑微→求点赞*/
+/*萌新UP的日常卑微→求点赞*/
+/*萌新UP的日常卑微→求点赞*/
+/*萌新UP的日常卑微→求点赞*/
+/*萌新UP的日常卑微→求点赞*/
+/*萌新UP的日常卑微→求点赞*/
+/*萌新UP的日常卑微→求点赞*/
+/*萌新UP的日常卑微→求点赞*/
+/*萌新UP的日常卑微→求点赞*/
+/*萌新UP的日常卑微→求点赞*/
