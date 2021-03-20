@@ -1,0 +1,218 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>WELCOME TO MY WEBSITE</title>
+<link rel="stylesheet" href="css/style.css">
+<script src="js/parallax.js"></script>
+</head>
+
+<body>
+<div class="container">
+	<ul id="scene">
+		<li class="layer" data-depth=".2"><img src="img/planet1.png"></li>
+		<li class="layer" data-depth=".3"><img src="img/planet2.png"></li>
+		<li class="layer" data-depth="1"><img src="img/man.png"></li>
+		<li class="layer" data-depth=".5"><img src="img/earth.png"></li>
+		<li class="layer" data-depth=".2"><img src="img/text.png"></li>
+		<li class="layer" data-depth=".4"><img src="img/planet3.png"></li>
+		<li class="layer" data-depth=".8"><img src="img/planet4.png"></li>
+		<li class="layer" data-depth="0"><img src="img/planet5.png"></li>
+	</ul>
+</div>
+	<script>
+        var scene = document.getElementById('scene');
+        var parallax = new Parallax(scene);
+			var imgs=scene.children;
+			scene.parentElement.addEventListener('selectstart',function(e){
+				e.preventDefault();
+			})
+			scene.parentElement.addEventListener('contextmenu',function(e){
+				e.preventDefault();
+			})
+			for(var i=0;i<imgs.length;i++) {
+				imgs[i].ondragstart=function() {
+					return false;
+				}
+			}
+    </script>
+	<div class="nav">
+		<a class="nav_text" href="contact.html" target="_blank">
+			KANYE NORTH
+		</a>
+		<span>←click here</span>
+		<ul>
+			<li id="one">初见</li>
+			
+			<li id="two">分享</li>
+			<li id="three">留言</li>
+			<li id="four">
+				联系
+				<img src="img/mycontact.png" alt="mycontact" class="myContact">
+			</li>
+			<li id="five">神秘</li>
+			<li id="six">声明</li>
+			<div class="nav_mask"></div>
+		</ul>
+		
+	</div>
+<!--banner part-->
+	<div class="banner w">
+		<div class="banner_img">
+			<div class="round1"></div>
+			<div class="round2"></div>
+			<div class="round3"></div>
+			<p class="words">关于我</p>
+		</div>
+		<div class="banner_content">
+			<p class="banner_text">
+			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;我是一个男性黑人,出生在叙利亚的穆斯林家庭，后来我支持LGBT选择变性嫁给了一名白人变性者并育有一对龙凤胎。男孩变性成les,女孩变性成gay。但战事动荡配偶战死，我虽用RPG自卫，但也被炸断双腿高位截瘫，现在我患有PTSD创伤后应激障碍，为了躲避战乱我选择去日本避难。加入了环保协会，动物保护组织，大自然保护协会并成为了素食主义者，如果你骂我就是侵犯我的言论自由。
+			</p>
+		</div>
+		<ul class="slideBar">
+			<li class="current">春</li>
+			<li>夏</li>
+			<li>秋</li>
+			<li>冬</li>
+		</ul>
+	</div>
+	
+<!--	body part-->
+	<div class="intro w">
+		<div class="intro_box">
+			<div class="intro_img"><img src="img/overlord.png"><p>Overlord</p></div>
+			<div class="intro_img"><img src="img/halloween.jpg"><p>月光光心慌慌</p></div>
+			<div class="intro_img"><img src="img/freddy.jpg"><p>猛鬼街</p></div>
+			<div class="intro_img"><img src="img/kenan.png"><p>名侦探柯南</p></div>
+			<div class="intro_img"><img src="img/dragonandtiger.png"><p>龙与虎</p></div>
+			<div class="intro_img"><img src="img/gaomu.jpg"><p>擅长捉弄的高木同学</p></div>
+			<div class="intro_img"><img src="img/darling.png"><p>DARLING in the FRANXX</p></div>
+		</div>
+			<p>闹的挺大，我们县的高中都传疯了。</p>
+		<p>先说一下，我高二，以前是个二刺猿，但现在很少看动漫，最多也就玩个二次元游戏。我有个初中同学，我俩一起入宅的。现在就在我隔壁班。我俩也经常一起吃饭出去玩。而他班上有个傻币二次猿，上课天天看动漫玩游戏买手办，成绩一直是班上倒数第一，还特别喜欢充钱。听我朋友说光明日方舟他就充了几万。而他班上入宅的人很少，他就黏住我朋友，经常在我俩一起起饭的时候凑进来。但我和我朋友一直都挺不喜欢他的，他经常在我们面前吹嘘他又氪金抽到了什么什么，我俩没有之类的话，还喜欢贬低别的动漫，经常不在意我俩的脸色就在贬低我俩喜欢的角色，他这人人品还有问题。他在他自己班上口碑也很差，几乎没什么朋友。</p>
+		<p>而在上个月初，国庆假时，他玩原神充了三万rmb，他还不满足，还有角色没满命，他就去偷钱，被他父亲抓了个现行，然后他俩居然打起来了，最后他拿走五万便回学校去了。</p>
+		<p>说一下，我学校是全日制寄宿式学校，每个星期六放半天假，每个月月底放2-3天假。</p>
+			<p>然后事情来了，他十月月底回家时，发现他父母都不在家，只有他妹在家，他就把他妹强奸了，还威胁他妹不准告诉父母。然后这个月月初回校中午吃饭时他就和我们说他妹肯定是兄控，肯定喜欢他，于是他就和他妹做了，他还讲了细节，当时我和我朋友没相信。对了，他妹刚12。</p>
+		<p>然后前天10点左右的样子，他父母可能知道他强奸他妹了，就跑来学校，当场就打断他一只腿。他却还说着什么要和他父亲拼命。当时很多人录下来了，发到各高中学校群，我们县所有高中都知道了这件事，虽然说现在学校把消息压下来了，我们学校还专门用半天时间告诉我们这件事不要乱传之类的。</p>
+			<p>反正当时闹公安去了，后面发生了什么我也不知道。我现在只想劝你们早日放弃二刺猿，不要变成像他那样的人。</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<script>
+		var lis=document.querySelector('.nav').children[2].children;
+		var mask=document.querySelector('.nav_mask');
+		for(var i=0;i<lis.length;i++) {
+			lis[i].setAttribute('idx',i);
+		}
+		var flag=0;
+		for(var i=0;i<lis.length;i++) {
+			lis[i].onmouseover=function() {
+				var li=this;
+				mask.style.left=li.getAttribute('idx')*100+'px';
+			}
+			lis[i].onmouseout=function() {
+				mask.style.left='0px';
+			}
+		}
+		//share part
+		lis[1].onclick=function() {
+			alert('选中复制链接: http://richbrian1219.wonzan.com/');
+		}
+		//comment part
+		lis[2].onclick=function() {
+			alert('这个作者很懒,还没完成这个模块哦');
+		}
+		//图片显示
+		lis[3].onclick=function() {
+			lis[3].children[0].style.display='block';
+			lis[3].addEventListener('mouseout',hidepic);
+			function hidepic() {
+				lis[3].children[0].style.display='none';
+			}
+		}
+		//滚动指定位置
+		var banner=document.querySelector('.banner');
+		var nav=document.querySelector('.nav');
+		var sbar=document.querySelector('.slideBar');
+		var intro=document.querySelector('.intro');
+		
+		nav.children[0].onclick=function() {
+			
+		}
+		
+		function gotod() {
+			if(pageYOffset<120)
+				return;
+			var target=nav.offsetTop;
+			var timer=setInterval(function() {
+				var step=Math.ceil((target-pageYOffset)/80);
+				scrollTo(0,pageYOffset+step);
+				if(pageYOffset>=target) {
+					clearInterval(timer);
+					document.removeEventListener('scroll',gotod);
+					sbar.style.position='fixed';
+					sbar.style.left=banner.offsetLeft+1100+'px';
+					sbar.style.top='150px';
+					document.addEventListener('scroll',gotou);
+				}	
+			},10);	
+
+		}
+		function gotou() {
+			if(pageYOffset>=nav.offsetTop)
+				return;
+			var timer=setInterval(function() {
+				var step=Math.ceil((pageYOffset)/100);
+				scrollTo(0,pageYOffset-step);
+				if(pageYOffset==0) {
+					clearInterval(timer);
+					document.removeEventListener('scroll',gotou);
+				}
+			},10)
+		}
+		document.addEventListener('scroll',gotod);
+		document.addEventListener('scroll',function() {
+			if(pageYOffset<120) {
+				document.addEventListener('scroll',gotod);
+			}	
+			if(pageYOffset<nav.offsetTop) {
+				sbar.style.position='absolute';	
+				sbar.style.left='1100px';
+				sbar.style.top='100px';
+			}
+			
+			//slidebar function
+	
+			if(pageYOffset>=0 && pageYOffset<intro.offsetTop-50) {
+				sbar.children[0].className='current';
+				sbar.children[1].className='';
+			}
+			else if(pageYOffset<intro.offsetTop+500) {
+				sbar.children[1].className='current';
+				sbar.children[0].className='';
+			}
+		});
+		
+		intro.addEventListener('selectstart',function(e) {
+			e.preventDefault();
+		})
+		intro.addEventListener('dragstart',function(e) {
+			e.preventDefault();
+		})
+		
+		
+	</script>
+	
+	
+	
+</body>
+</html>
